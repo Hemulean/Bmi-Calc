@@ -10,14 +10,13 @@ namespace Bmi_Calc
         {
 
            
-                Console.WriteLine("Please enter your height");
-                int height = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter your height"); 
+            int height = Convert.ToInt32(Console.ReadLine()); 
 
-                Console.WriteLine("Please enter your current weight (kg)");
-                int weight = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter your current weight (kg)"); 
+            int weight = Convert.ToInt32(Console.ReadLine());
             
-            // float dividedHeight = DivideUserHeight(height);
-
+                
             float BmiResult = BodyMassIndex(weight, height);
 
             Console.WriteLine("Your current Bmi = " + BmiResult);
@@ -29,12 +28,5 @@ namespace Bmi_Calc
             y = y * y;
             return x / y;
         }
-
-       /* static float DivideUserHeight(float y)
-        {
-            y = y / 2;
-            return y * y;
-        }
-       */
     }
 }
