@@ -10,7 +10,7 @@ namespace Bmi_Calc
         {
 
            
-            Console.WriteLine("Please enter your height"); 
+            Console.WriteLine("Please enter your height (cm)"); 
             int height = Convert.ToInt32(Console.ReadLine()); 
 
             Console.WriteLine("Please enter your current weight (kg)"); 
@@ -19,7 +19,7 @@ namespace Bmi_Calc
                 
             float BmiResult = BodyMassIndex(weight, height);
 
-            Console.WriteLine("Your current Bmi = " + BmiResult);
+            Console.WriteLine($"Your current Bmi = {BmiResult}.");
         }
 
         static float BodyMassIndex(float x,float y)
